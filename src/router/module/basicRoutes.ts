@@ -1,8 +1,9 @@
-import Home from '@/views/home/HomeView.vue'
+import main from "./main"
 
 export default [
   {
-    path: '/',
-    component: Home
-  }
+    path: "/",
+    redirect: "/main"
+  },
+  ...main
 ]

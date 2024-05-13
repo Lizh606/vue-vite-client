@@ -7,6 +7,10 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    BasicLayout: typeof import('./src/components/layout/BasicLayout.vue')['default']
+    GlobalContent: typeof import('./src/components/global/GlobalContent.vue')['default']
+    GlobalHeader: typeof import('./src/components/global/GlobalHeader.vue')['default']
+    GlobalMenu: typeof import('./src/components/global/GlobalMenu.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
     IconEcosystem: typeof import('./src/components/icons/IconEcosystem.vue')['default']
@@ -14,8 +18,23 @@ declare module 'vue' {
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
     QuButton: typeof import('@dist/quark-next')['QuButton']
     QuButtonGroup: typeof import('@dist/quark-next')['QuButtonGroup']
+    QuCheckbox: typeof import('@dist/quark-next')['QuCheckbox']
+    QueryPanel: typeof import('./src/components/queryPanel/index.vue')['default']
+    QuForm: typeof import('@dist/quark-next')['QuForm']
+    QuFormItem: typeof import('@dist/quark-next')['QuFormItem']
+    QuIcon: typeof import('@dist/quark-next')['QuIcon']
+    QuInput: typeof import('@dist/quark-next')['QuInput']
+    QuMenu: typeof import('@dist/quark-next')['QuMenu']
+    QuMenuItem: typeof import('@dist/quark-next')['QuMenuItem']
+    QuModal: typeof import('@dist/quark-next')['QuModal']
+    QuPage: typeof import('@dist/quark-next')['QuPage']
+    QuRadio: typeof import('@dist/quark-next')['QuRadio']
+    QuRadioGroup: typeof import('@dist/quark-next')['QuRadioGroup']
+    QuSubmenu: typeof import('@dist/quark-next')['QuSubmenu']
+    QuTable: typeof import('@dist/quark-next')['QuTable']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SvgIcon: typeof import('./src/components/SvgIcon/SvgIcon.vue')['default']
+    SelectRadio: typeof import('./src/components/selectRadio/index.vue')['default']
+    SvgIcon: typeof import('./src/components/svgIcon/SvgIcon.vue')['default']
   }
 }

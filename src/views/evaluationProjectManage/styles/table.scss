@@ -1,0 +1,21 @@
+:deep(.qu-table-header thead tr th) {
+  border-color: #cceaf0;
+  background-color: #ebf7f9;
+}
+:deep(.qu-table-body tr td) {
+  border-color: #cceaf0;
+}
+:deep(.qu-table-wrapper-with-border) {
+  border-color: #cceaf0 !important;
+}
+
+:deep(.qu-table) {
+  &::before {
+    background-color: #cceaf0;
+  }
+}
+:deep(.qu-table-border) {
+  &::after {
+    background-color: #cceaf0;
+  }
+}
