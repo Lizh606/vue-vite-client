@@ -16,6 +16,6 @@ declare module 'vue' {
     QuButtonGroup: typeof import('@dist/quark-next')['QuButtonGroup']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SvgIcon: typeof import('./src/components/SvgIcon/SvgIcon.vue')['default']
+    SvgIcon: typeof import('./src/components/svgIcon/SvgIcon.vue')['default']
   }
 }

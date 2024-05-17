@@ -1,7 +1,8 @@
 <template>
   <div class="flex flex-col gap-4">
     <div class="flex items-center gap-4">
-      Pinia: <span>{{ count }}. {{ doubleCount }}</span> <button @click="increment">+</button>
+      Pinia: <span>{{ count }}. {{ doubleCount }}</span>
+      <button @click="increment">+</button>
     </div>
     <div>
       quark-next：
@@ -15,12 +16,13 @@
 </template>
 
 <script setup lang="ts">
-import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
-import { useCounterStore } from '@/stores/counter'
-import { storeToRefs } from 'pinia'
-const store = useCounterStore()
-const { count, doubleCount } = storeToRefs(store)
-const { increment } = store
+  import SvgIcon from "@/components/svgIcon/SvgIcon.vue"
+  import { useCounterStore } from "@/stores/counter"
+  import { storeToRefs } from "pinia"
+  const store = useCounterStore()
+  const { count, doubleCount } = storeToRefs(store)
+  const { increment } = store
+  console.log(import.meta.env.VITE_APP_TEXT)
 </script>
 
 <style lang="scss"></style>
